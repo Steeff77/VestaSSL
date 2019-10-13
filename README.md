@@ -1,10 +1,10 @@
 VestaCP System SSL
-(v-add-letsencrypt-domain) the VestaCP SSL.
-
+First:(v-add-letsencrypt-domain) the VestaCP SSL.
+Than
 ```nano /etc/cron.daily/ssl_renew```
 Please change the [USER] and [DOMAIN] part with your system domain.
 
-```php
+```text
 #!/bin/bash
 
 cert_src="/home/[USER]/conf/web/ssl.[DOMAIN].pem"
